@@ -1,0 +1,19 @@
+// The OpenRGB Link plugin: the lighting OpenRGB controls (often the
+// RAM, the motherboard, the graphics card and more), brought into Ectomatter as
+// one device whose profiles are OpenRGB's own, so a game can switch them as it
+// switches the keyboard's. It reaches OpenRGB through OpenRGB's SDK server on
+// this computer, and nothing else (docs/core-protocol.md, section 11).
+{
+  "id": "openrgb-link",
+  "kind": "plugin",
+  "name": "OpenRGB Link",
+  "version": "1.0.0",
+  "protocol": 4,          // the core protocol it speaks
+  "ectomatter": "0.1.0",    // the oldest Ectomatter it runs on
+  "module": "core.wasm",  // built from module/ by tools/build-plugins.sh
+  "license": "GPL-3.0-only",
+  "description": "Lighting that OpenRGB controls, such as your RAM.",
+  "glyph": "glyph.svg",   // Phosphor's light bulb, Light (phosphoricons.com, MIT)
+  "devices": [],          // whatever OpenRGB has, found through it
+  "uses": [{ "network": "127.0.0.1:6742", "to": "OpenRGB" }]
+}
