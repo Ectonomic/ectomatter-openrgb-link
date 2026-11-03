@@ -7,3 +7,9 @@ version = 1
 path = "**"
 SPDX-FileCopyrightText = "2026 Ectonomic LLC"
 SPDX-License-Identifier = "GPL-3.0-only"
+
+# Phosphor's light bulb, the plugin's icon, and the README's copies of it
+[[annotations]]
+path = ["glyph.svg", "pictures/logo-light.svg", "pictures/logo-dark.svg"]
+SPDX-FileCopyrightText = "2023 Phosphor Icons (https://phosphoricons.com)"
+SPDX-License-Identifier = "MIT"

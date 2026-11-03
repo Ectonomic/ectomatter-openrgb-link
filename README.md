@@ -1,6 +1,13 @@
-# OpenRGB Link for Ectomatter
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="pictures/logo-dark.svg">
+    <img src="pictures/logo-light.svg" width="88" alt="">
+  </picture>
+</p>
 
-Lighting that OpenRGB controls, such as your RAM.
+<h1 align="center">OpenRGB Link for Ectomatter</h1>
+
+<p align="center">Lighting that OpenRGB controls, such as your RAM.</p>
 
 This is a plugin for [Ectomatter](https://github.com/Ectonomic/Ectomatter), one app for the devices on your desk. A plugin brings something into Ectomatter that isn't a device, such as another program, the games on the computer or the weather. It runs inside Ectomatter as a WebAssembly module and reaches only what its manifest (`core.json`) names.
 
@@ -25,9 +32,10 @@ Ectonomic builds its releases with Rust 1.98.1.
 
 - `core.json`, `glyph.svg`: the plugin as Ectomatter installs it, its manifest and the files it carries
 - `module/`: the module's source
+- `pictures/`: the logo at the top of this README, the plugin's icon in GitHub's text colors, made in Ectomatter's repository by `tools/plugin-logos.py`, and not part of the plugin
 
 ## License
 
 Copyright (C) 2026 Ectonomic LLC. Made by Grant Garrison and Claude.
 
-This plugin is free software under the GNU General Public License, version 3 only (`LICENSE`): you may share and change it under its terms. It comes with no warranty.
+This plugin is free software under the GNU General Public License, version 3 only (`LICENSE`): you may share and change it under its terms. It comes with no warranty. The files it carries from others are under their own licenses, named in `REUSE.toml`, with their texts in `LICENSES/`.
